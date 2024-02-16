@@ -1,0 +1,515 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+/* 
+body{
+    background-image: url('images/bg_4.jpg'); /* Reemplaza 'nombre_de_la_imagen.jpg' con el nombre de tu imagen */
+    /* background-size: cover;
+    background-position: center;
+} */ */
+
+h1{
+   font-family: "Josefin Sans", Arial, sans-serif;
+}
+
+p{
+    font-family:"Poppins", Arial, sans-serif;
+    font-size: 130%;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+
+.carousel-caption h1{
+    font-size: 50px;
+}
+
+.carousel-caption h3{
+    color: #c49b63;
+    font-size: 40px;
+    font-family: "Great Vibes", cursive;
+
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.carousel-caption p{
+    width: 60%;
+    font-size: 20px;
+    margin: auto;
+    line-height: 1.9;
+}
+
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(39, 39, 39, 0.7);
+    z-index: 1;
+}
+
+/* NAVBAR */
+.navbar.navbar-expand-lg.bg-body-tertiary.fixed-top {
+    background-color: black !important;
+    padding: 10px;
+    padding-bottom: 25px;
+}
+
+
+.navbar-brand {
+    padding: 0; /* Eliminar el relleno interno */
+    padding-top: 0;
+}
+
+.navbar-brand img {
+    height: 70px;
+    width: 70px;
+}
+
+
+.navbar-nav .nav-link {
+    margin-right: 20px; /* Agregar espacio entre los elementos <li> */
+    color: white; /* Cambiar el color del texto a blanco */
+    font-family: "Josefin Sans", Arial, sans-serif;
+    font-size: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #c49b63; /* Cambiar el color del texto al pasar el mouse */
+}
+
+
+.navbar-brand {
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
+
+}
+
+.navbar-brand a{
+   font-size: 18px;
+   text-transform: uppercase;
+   font-weight: 500;
+   font-family: "Josefin Sans", Arial, sans-serif;
+}
+
+
+ 
+.navbar-light .navbar-brand{
+
+    color: black;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover{
+    color: black;
+}
+
+.navbar-light .navbar-nav .navbar-link{
+    color: black;
+}
+
+.w-100{
+    height: 100vh;
+}
+
+nav{
+    color: black;
+}
+
+ div.container{
+    margin: 0;
+    padding-right: 0;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+#about{
+    background-color: white;
+    padding-bottom: 25px;
+}
+
+#about.about-section-padding{
+    width: 95%;
+}
+ 
+img.img-fluid{
+    padding-top: 25px;
+    max-width: 110%;
+    height: auto;
+}
+
+.about-text h1{
+    
+    font-size: 85px;
+    color: #c49b63;
+    font-family: "Great Vibes", cursive;
+    line-height: 0;
+    margin: 0;
+}
+
+
+.about-text h3{
+    font-size: 60px;
+  
+}
+
+.container{
+    padding-top: 25px;
+}
+
+/* RESPONSIVE */
+@media only screen and (min-widht: 768px) and (max-widht: 991px){
+
+    .carousel-caption p{
+      
+        width: 100%;
+    }
+}
+
+@media only screen and (max-widht: 767px){
+    .navbar-nav{
+        text-align: center;
+    }
+
+    .carousel-caption{
+        bottom: 125px;
+    }
+
+    .carousel-caption h1{
+        font-size: 20px;
+    }
+
+    .carousel-caption h3{
+        font-size: 10px;
+    }
+
+    .carousel-caption a{
+       padding: 10px 15px; 
+    }
+
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;
+    }
+
+    .about-text {
+        padding-top: 50px;
+    }
+}
+
+/* card */
+
+ h3.white{
+    color: white;
+}
+
+#locales{
+    position: relative;
+    background-image: url('images/patryk-gauza-vs0tzSHVcac-unsplash.jpg'); /* Cambiar la URL de la imagen según corresponda */
+    background-size: cover;
+    background-position: center;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semi-transparente */
+}
+
+div#sanTelmo.card,div#palermo.card{
+    border-radius: 40px;
+}
+
+.button-container{
+    padding-top: 45px;
+}
+
+    
+
+#card img{
+    padding: 35px;
+    margin: auto;
+    height: 500px;
+    border-radius: 65px;
+}
+
+#card button {
+    border-style: outset;
+    border-color: blanchedalmond;
+    background: none;
+    cursor: pointer;
+    font-size: 25px;
+    text-decoration: none;
+    color: #c49b63;
+    border-radius: 14px;
+    margin: 0 40px; 
+}
+
+/* Alinear los botones al centro */
+#card {
+    padding: 90px;
+    text-align: center;
+    margin: 25px; /* Espacio entre el carrusel y los botones */
+    position: relative;
+    z-index: 1; /* Asegura que las tarjetas estén por encima del overlay */
+
+}
+
+#card button {
+    border-style: outset;
+    border-color: blanchedalmond;
+    background: none;
+    cursor: pointer;
+    font-size: 25px;
+    text-decoration: none;
+    color: #c49b63;
+    border-radius: 14px;
+    margin: 0 40px;
+    transition: background-color 0.3s; /* Agregar una transición para suavizar el cambio de color de fondo */
+}
+
+#card button:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Cambiar el color de fondo al pasar el mouse */
+}
+
+#card button.selected {
+    background-color: #c49b63; /* Cambiar el color de fondo cuando está seleccionado */
+    color: white; /* Cambiar el color del texto cuando está seleccionado */
+}
+
+/* Centrar las tarjetas */
+.card-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; /* Espacio entre los botones y las tarjetas */
+}
+.card-container h3{
+    font-size: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card-container p{
+    padding: 20px;
+}
+/* Efecto de fade-in */
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+/* FORM */
+#form {
+  
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+#form h1 {
+    color: #c49b63;
+    font-size: 60px;
+    font-family: "Great Vibes", cursive;
+    line-height: 0;
+    margin: 0;
+}
+#form h3 {
+    color: black;
+    font-size: 40px;
+    font-family: "Josefin Sans", Arial, sans-serif;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+/* Estilo para los campos del formulario */
+#form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #c49b63;
+}
+
+#form input,
+#form select {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #c49b63;
+}
+
+#form input[type="submit"] {
+    background-color: #c49b63;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Agregar una transición para suavizar el cambio de color de fondo */
+}
+
+#form input[type="submit"]:hover {
+    background-color: #b3834d; /* Cambiar el color de fondo al pasar el mouse */
+}
+
+#formularioReserva{
+    width: 300%;
+    text-align: left;
+}
+
+/* img form */
+.container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items:center; /* Centra verticalmente los elementos */
+}
+
+.form-container {
+    flex: 1; /* El formulario ocupa todo el espacio disponible */
+    margin-right: 20px; /* Espacio entre el formulario y la imagen */
+}
+
+.imagen-container img {
+    text-align: right;
+    max-width: 50%; /* La imagen no supera el ancho del contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+}
+
+/* POPUP FORMULARIO */
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    display: none;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+#cafe-logo {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 100px;
+    z-index: 1001;
+}
+
+
+.container-fluid h1 {
+    color: #c49b63;
+    font-size: 60px;
+    font-family: "Great Vibes", cursive;
+    line-height: 0;
+    margin: 0;
+}
+.container-fluid h3 {
+    color: black;
+    font-size: 40px;
+    font-family: "Josefin Sans", Arial, sans-serif;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+
+    
+}
+
+.container-fluid {
+    background-image: url('images/nordwood-themes-ivP3TYdLvw0-unsplash.jpg');
+    background-size: cover; /* Cubre todo el contenedor, sin distorsionar la imagen */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-position: center; /* Centra la imagen en el contenedor */
+    
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semi-transparente */
+}
+
+
+/* footer */
+footer img{
+    height: 100px;
+}
+
+footer h3{
+    color: #c49b63;
+    font-family: "Great Vibes", cursive;
+    font-size: 40px;
+}
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.frases-cafe {
+    text-align: left;
+}
+
+.redes-sociales {
+    text-align: right;
+}
+
+.redes-sociales img {
+    margin-left: 10px;
+}
+
+.redes-sociales img{
+    height: 70px;
+    margin-left: 40px; /* Espacio entre los logos */
+}
+
+/* 
+/* Estilo para la línea divisoria */
+/* .linea-divisoria {
+    border-left: 1px solid #fff;
+    height: 50px;
+    margin: 0 20px;
+}  */
+

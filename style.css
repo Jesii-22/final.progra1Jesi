@@ -172,6 +172,13 @@ img.img-fluid{
   
 }
 
+#historia h4{
+    font-size: 40px;
+    color: #c49b63;
+    font-family: "Great Vibes", cursive;
+  
+}
+
 .container{
     padding-top: 25px;
 }
@@ -378,7 +385,7 @@ div#sanTelmo.card,div#palermo.card{
 }
 
 #formularioReserva{
-    width: 300%;
+    width: 190%;
     text-align: left;
 }
 
@@ -386,48 +393,25 @@ div#sanTelmo.card,div#palermo.card{
 .container {
     display: flex;
     justify-content: center; /* Centra horizontalmente los elementos */
-    align-items:center; /* Centra verticalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
 }
 
 .form-container {
     flex: 1; /* El formulario ocupa todo el espacio disponible */
-    margin-right: 20px; /* Espacio entre el formulario y la imagen */
+    margin-right: 10px; /* Espacio entre el formulario y la imagen */
+}
+
+.imagen-container {
+    flex: 1; /* La imagen ocupa todo el espacio disponible */
+    margin-left: 10px; /* Espacio entre la imagen y el formulario */
 }
 
 .imagen-container img {
-    text-align: right;
-    max-width: 50%; /* La imagen no supera el ancho del contenedor */
+    max-width: 90%; /* La imagen ocupa todo el ancho del contenedor */
     height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
 }
 
-/* POPUP FORMULARIO */
-/* 
-.popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    z-index: 1000;
-    display: none;
-}
 
-.popup-content {
-    text-align: center;
-}
-
-.popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-    display: none;
-} */
 
 #cafe-logo {
     position: fixed;

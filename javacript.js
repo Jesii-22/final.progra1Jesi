@@ -60,21 +60,6 @@ function mostrarHoraReserva(horaAMostrar, horaAOcultar) {
 }
 
 // // Event listener para el envío del formulario de reserva
-// document.getElementById('formularioReserva').addEventListener('submit', function(event) {
-//     event.preventDefault(); // Prevenir el envío del formulario por defecto
-
-//     // Obtener los valores del formulario y validar si es necesario
-
-//     // Mostrar el popup
-//     document.getElementById('popup').style.display = 'block';
-//     document.getElementById('popup-overlay').style.display = 'block';
-// });
-
-// // Cerrar el popup al hacer clic en el fondo oscuro
-// document.getElementById('popup-overlay').addEventListener('click', function() {
-//     document.getElementById('popup').style.display = 'none';
-//     this.style.display = 'none';
-// });
 
 // Event listener para el cambio de local en el formulario de reserva
 document.getElementById('local').addEventListener('change', function() {
@@ -98,8 +83,12 @@ document.getElementById('local').addEventListener('change', function() {
 var frases = [
     "La vida es demasiado corta para beber café malo.",
     "El café es la respuesta a todo, incluso a la pregunta de cuál es la pregunta.",
-    "La vida comienza después del café."
-    // Agrega más frases según sea necesario
+    "La vida comienza después del café.",
+    "Me gusta mi café como a mí mismo: fuerte, dulce y demasiado caliente para ti.",
+    "Nuestra cultura funciona con café y gasolina, y la primera a menudo sabe a la segunda.",
+    "La buena comunicación es tan estimulante como el café negro e igual de difícil.", 
+    " Juzgo un restaurante por el pan y por el café."
+    // Agrega más frases //
 ];
 
 var indiceActual = 0;
@@ -111,8 +100,8 @@ function cambiarFrase() {
     indiceActual = (indiceActual + 1) % frases.length;
 }
 
-// Cambiar la frase cada 45 segundos
-setInterval(cambiarFrase, 45000);
+// Cambiar la frase cada 35 segundos
+setInterval(cambiarFrase, 35000);
 
 // Cambiar la frase inicial
 cambiarFrase();

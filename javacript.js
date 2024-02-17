@@ -59,8 +59,6 @@ function mostrarHoraReserva(horaAMostrar, horaAOcultar) {
     horaAOcultar.style.display = "none";
 }
 
-// // Event listener para el envío del formulario de reserva
-
 // Event listener para el cambio de local en el formulario de reserva
 document.getElementById('local').addEventListener('change', function() {
     var selectedLocal = this.value;
@@ -100,7 +98,7 @@ function cambiarFrase() {
     indiceActual = (indiceActual + 1) % frases.length;
 }
 
-// Cambiar la frase cada 35 segundos
+// Cambiar la frase cada 5 segundos
 setInterval(cambiarFrase, 35000);
 
 // Cambiar la frase inicial

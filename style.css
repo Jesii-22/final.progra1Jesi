@@ -144,7 +144,8 @@ nav{
 
 #about{
     background-color: white;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 #about.about-section-padding{
@@ -182,6 +183,7 @@ img.img-fluid{
 .container{
     padding-top: 25px;
 }
+
 
 /* RESPONSIVE */
 @media only screen and (min-widht: 768px) and (max-widht: 991px){

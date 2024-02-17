@@ -59,22 +59,22 @@ function mostrarHoraReserva(horaAMostrar, horaAOcultar) {
     horaAOcultar.style.display = "none";
 }
 
-// Event listener para el envío del formulario de reserva
-document.getElementById('formularioReserva').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevenir el envío del formulario por defecto
+// // Event listener para el envío del formulario de reserva
+// document.getElementById('formularioReserva').addEventListener('submit', function(event) {
+//     event.preventDefault(); // Prevenir el envío del formulario por defecto
 
-    // Obtener los valores del formulario y validar si es necesario
+//     // Obtener los valores del formulario y validar si es necesario
 
-    // Mostrar el popup
-    document.getElementById('popup').style.display = 'block';
-    document.getElementById('popup-overlay').style.display = 'block';
-});
+//     // Mostrar el popup
+//     document.getElementById('popup').style.display = 'block';
+//     document.getElementById('popup-overlay').style.display = 'block';
+// });
 
-// Cerrar el popup al hacer clic en el fondo oscuro
-document.getElementById('popup-overlay').addEventListener('click', function() {
-    document.getElementById('popup').style.display = 'none';
-    this.style.display = 'none';
-});
+// // Cerrar el popup al hacer clic en el fondo oscuro
+// document.getElementById('popup-overlay').addEventListener('click', function() {
+//     document.getElementById('popup').style.display = 'none';
+//     this.style.display = 'none';
+// });
 
 // Event listener para el cambio de local en el formulario de reserva
 document.getElementById('local').addEventListener('change', function() {

@@ -4,10 +4,10 @@
 }
 /* 
 body{
-    background-image: url('images/bg_4.jpg'); /* Reemplaza 'nombre_de_la_imagen.jpg' con el nombre de tu imagen */
+    background-image: url('images/bg_4.jpg')
     /* background-size: cover;
     background-position: center;
-} */ */
+} */ 
 
 h1{
    font-family: "Josefin Sans", Arial, sans-serif;
@@ -401,7 +401,7 @@ div#sanTelmo.card,div#palermo.card{
 }
 
 /* POPUP FORMULARIO */
-
+/* 
 .popup {
     position: fixed;
     top: 50%;
@@ -427,7 +427,7 @@ div#sanTelmo.card,div#palermo.card{
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999;
     display: none;
-}
+} */
 
 #cafe-logo {
     position: fixed;

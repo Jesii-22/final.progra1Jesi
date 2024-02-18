@@ -202,15 +202,29 @@ img.img-fluid{
 
 
 /* RESPONSIVE */
-@media only screen and (min-widht: 768px) and (max-widht: 991px){
-
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    /* Modificaciones específicas para pantallas de 768px a 991px */
     .carousel-caption p{
-      
+        width: 100%;
+    }
+    
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #form input,
+    #form select {
+        width: 100%;
+    }
+
+    #formularioReserva {
         width: 100%;
     }
 }
 
-@media only screen and (max-widht: 767px){
+@media only screen and (max-width: 767px){
+    /* Modificaciones específicas para pantallas de hasta 767px */
     .navbar-nav{
         text-align: center;
     }
@@ -227,10 +241,6 @@ img.img-fluid{
         font-size: 10px;
     }
 
-    .carousel-caption a{
-       padding: 10px 15px; 
-    }
-
     .carousel-caption p{
         width: 100%;
         line-height: 1.6;
@@ -240,7 +250,26 @@ img.img-fluid{
     .about-text {
         padding-top: 50px;
     }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #form input,
+    #form select {
+        width: 100%;
+    }
+
+    #formularioReserva {
+        width: 100%;
+    }
+
+    #overlay2 iframe {
+        width: 100%;
+    }
 }
+
 
 /* SECCION PRODUCTOS */
 
@@ -557,12 +586,4 @@ footer {
     height: 70px;
     margin-left: 40px; /* Espacio entre los logos */
 }
-
-/* 
-/* Estilo para la línea divisoria */
-/* .linea-divisoria {
-    border-left: 1px solid #fff;
-    height: 50px;
-    margin: 0 20px;
-}  */
 

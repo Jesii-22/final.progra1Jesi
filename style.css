@@ -184,6 +184,22 @@ img.img-fluid{
     padding-top: 25px;
 }
 
+/* HOVER IMG */
+
+/* Estilo de la imagen en la sección "About" o "Historia" */
+.about-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Agrega bordes redondeados a la imagen */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agrega una transición suave para el efecto */
+}
+
+/* Efecto de sombra cuando se pasa el mouse sobre la imagen */
+.about-img img:hover {
+    transform: scale(1.05); /* Escala ligeramente la imagen cuando se activa el hover */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Agrega una sombra suave */
+}
+
 
 /* RESPONSIVE */
 @media only screen and (min-widht: 768px) and (max-widht: 991px){
@@ -226,6 +242,43 @@ img.img-fluid{
     }
 }
 
+/* SECCION PRODUCTOS */
+
+#productos h1{
+    padding-top: 45px;
+    text-align: center;
+    font-size: 75px;
+    color: #c49b63;
+    font-family: "Great Vibes", cursive;
+    line-height: 0;
+    margin: 0;
+}
+
+#productos h3{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 20px;
+
+}
+
+#productos p{
+    padding-top: 40px;
+}
+
+#productos{
+    background-image: url(images/bg_4.jpg);
+    margin-top: 15px;
+    margin-bottom: -30px;
+    padding: 45px;
+
+}
+
+/* HOVER IMG */
+
+.contenedor-img:hover img {
+    transform: scale(1.1); /* Escalar la imagen al 110% cuando se activa el hover */
+    transition: transform 0.3s ease; /* Agregar una transición suave para el efecto */
+}
 /* card */
 
  h3.white{
@@ -413,6 +466,20 @@ div#sanTelmo.card,div#palermo.card{
     height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
 }
 
+/* efectos img */
+
+/* Estilo de la imagen en el formulario */
+.imagen-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Agrega bordes redondeados a la imagen */
+    transition: transform 0.3s ease; /* Agrega una transición suave para el efecto */
+}
+
+/* Efecto de rotación cuando se pasa el mouse sobre la imagen */
+.imagen-container img:hover {
+    transform: rotate(15deg); /* Aplica una rotación de 15 grados al pasar el mouse */
+}
 
 
 #cafe-logo {

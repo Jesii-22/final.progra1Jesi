@@ -59,24 +59,27 @@ function mostrarHoraReserva(horaAMostrar, horaAOcultar) {
     horaAOcultar.style.display = "none";
 }
 
-// Validación del formulario
-function validarFormulario() {
-    var nombre = document.getElementById('nombre').value;
-    var email = document.getElementById('email').value;
-    var telefono = document.getElementById('telefono').value;
+// Event listener para el cambio de local en el formulario de reserva
+document.getElementById('local').addEventListener('change', function() {
+    var selectedLocal = this.value;
+    var contenedorHoraSanTelmo = document.getElementById('contenedorHoraSanTelmo');
+    var horaPalermo = document.getElementById('horaPalermo');
 
-    if (nombre === '' || email === '' || telefono === '') {
-        alert('Por favor complete todos los campos del formulario.');
-        return false; // Evita que se envíe el formulario
+    if (selectedLocal === "San Telmo") {
+        contenedorHoraSanTelmo.style.display = "block";
+        horaPalermo.style.display = "none";
+    } else if (selectedLocal === "Palermo") {
+        contenedorHoraSanTelmo.style.display = "none";
+        horaPalermo.style.display = "block";
+    } else {
+        contenedorHoraSanTelmo.style.display = "none";
+        horaPalermo.style.display = "none";
     }
-    return true; // Permite que se envíe el formulario
-}
+});
 
-// Agregar evento de submit al formulario
-document.getElementById('formularioReserva').addEventListener('submit', function(event) {
-    if (!validarFormulario()) {
-        event.preventDefault(); // Evita que se envíe el formulario si no está validado
-    }
+// Event listener para el botón de refrescar el formulario
+document.getElementById('refresh').addEventListener('click', function() {
+    location.reload();
 });
 
 // Array de frases sobre café
@@ -87,7 +90,7 @@ var frases = [
     "Me gusta mi café como a mí mismo: fuerte, dulce y demasiado caliente para ti.",
     "Nuestra cultura funciona con café y gasolina, y la primera a menudo sabe a la segunda.",
     "La buena comunicación es tan estimulante como el café negro e igual de difícil.", 
-    " Juzgo un restaurante por el pan y por el café."
+    "Juzgo un restaurante por el pan y por el café."
     // Agrega más frases //
 ];
 

@@ -1,4 +1,4 @@
-// Funciones para mostrar u ocultar los locales con efecto fadeIn
+// Función para mostrar u ocultar los locales con efecto fadeIn
 function mostrarSanTelmo() {
     ocultarYMostrarConFadeIn("sanTelmo", "palermo");
 }
@@ -59,21 +59,23 @@ function mostrarHoraReserva(horaAMostrar, horaAOcultar) {
     horaAOcultar.style.display = "none";
 }
 
-// Event listener para el cambio de local en el formulario de reserva
-document.getElementById('local').addEventListener('change', function() {
-    var selectedLocal = this.value;
-    var contenedorHoraSanTelmo = document.getElementById('contenedorHoraSanTelmo');
-    var horaPalermo = document.getElementById('horaPalermo');
+// Validación del formulario
+function validarFormulario() {
+    var nombre = document.getElementById('nombre').value;
+    var email = document.getElementById('email').value;
+    var telefono = document.getElementById('telefono').value;
 
-    if (selectedLocal === "San Telmo") {
-        contenedorHoraSanTelmo.style.display = "block";
-        horaPalermo.style.display = "none";
-    } else if (selectedLocal === "Palermo") {
-        contenedorHoraSanTelmo.style.display = "none";
-        horaPalermo.style.display = "block";
-    } else {
-        contenedorHoraSanTelmo.style.display = "none";
-        horaPalermo.style.display = "none";
+    if (nombre === '' || email === '' || telefono === '') {
+        alert('Por favor complete todos los campos del formulario.');
+        return false; // Evita que se envíe el formulario
+    }
+    return true; // Permite que se envíe el formulario
+}
+
+// Agregar evento de submit al formulario
+document.getElementById('formularioReserva').addEventListener('submit', function(event) {
+    if (!validarFormulario()) {
+        event.preventDefault(); // Evita que se envíe el formulario si no está validado
     }
 });
 
@@ -98,16 +100,14 @@ function cambiarFrase() {
     indiceActual = (indiceActual + 1) % frases.length;
 }
 
-// Cambiar la frase cada 5 segundos
-setInterval(cambiarFrase, 35000);
+// Cambiar la frase cada 30 segundos
+setInterval(cambiarFrase, 30000);
 
 // Cambiar la frase inicial
 cambiarFrase();
 
-
-//refrescar boton del form
-
+// Refrescar boton del form
 let refresh = document.getElementById('refresh');
-refresh.addEventListener('click', _ => {
-            location.reload();
-})
+refresh.addEventListener('click', function() {
+    location.reload();
+});

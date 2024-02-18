@@ -250,7 +250,7 @@ img.img-fluid{
     }
 
     .navbar{
-        width: 390px;
+        width: 390px !important;
     }
 
     .navbar-nav .nav-link {
@@ -280,11 +280,6 @@ img.img-fluid{
         font-size: 20px;
     }
 
-
-    img.img-fluid {
-        max-width: 100%;
-        height: auto;
-    }
 
     .card-container h3 {
         font-size: 20px;
@@ -332,12 +327,12 @@ img.img-fluid{
     }
 
     .redes-sociales img {
-        height: 50px;
+        height: 20px !important;
         margin-left: 20px;
     }
 
     .contenedor-img {
-        width: 100%;
+        width: 300px;
         max-width: 300px; /* Para asegurar que no sobrepase el ancho deseado */
         height: auto;
     }
@@ -348,8 +343,6 @@ img.img-fluid{
         height: auto;
     }
 }
-
-
 
 
 /* SECCION PRODUCTOS */

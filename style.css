@@ -202,58 +202,72 @@ img.img-fluid{
 
 
 /* RESPONSIVE */
-@media only screen and (min-width: 768px) and (max-width: 991px){
-    /* Modificaciones específicas para pantallas de 768px a 991px */
-    .carousel-caption p{
-        width: 100%;
-    }
-    
-    .container {
-        padding-left: 15px;
-        padding-right: 15px;
+/* RESPONSIVE */
+@media only screen and (min-width: 360px) and (max-width: 640px){
+    /* Modificaciones específicas para pantallas de 360px a 640px */
+    .navbar-brand img {
+        height: 50px;
+        width: 50px;
     }
 
-    #form input,
-    #form select {
-        width: 100%;
+    .navbar-nav .nav-link {
+        font-size: 16px;
     }
 
-    #formularioReserva {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 767px){
-    /* Modificaciones específicas para pantallas de hasta 767px */
-    .navbar-nav{
-        text-align: center;
+    .carousel-caption h1 {
+        font-size: 30px;
     }
 
-    .carousel-caption{
-        bottom: 125px;
-    }
-
-    .carousel-caption h1{
+    .carousel-caption h3 {
         font-size: 20px;
     }
 
-    .carousel-caption h3{
-        font-size: 10px;
+    .carousel-caption p {
+        font-size: 14px;
     }
 
-    .carousel-caption p{
-        width: 100%;
-        line-height: 1.6;
-        font-size: 12px;
+    .about-text h1 {
+        font-size: 45px;
     }
 
-    .about-text {
-        padding-top: 50px;
+    .about-text h3 {
+        font-size: 30px;
     }
 
-    .container {
-        padding-left: 15px;
-        padding-right: 15px;
+    #historia h4 {
+        font-size: 30px;
+    }
+
+    #productos h1 {
+        font-size: 25px;
+    }
+
+    #productos h3 {
+        font-size: 18px;
+    }
+
+    #productos p {
+        font-size: 14px;
+    }
+
+    .card-container {
+        margin-top: 30px;
+    }
+
+    .card-container h3 {
+        font-size: 30px;
+    }
+
+    .card-container p {
+        font-size: 16px;
+    }
+
+    #form h1 {
+        font-size: 40px;
+    }
+
+    #form h3 {
+        font-size: 25px;
     }
 
     #form input,
@@ -261,14 +275,15 @@ img.img-fluid{
         width: 100%;
     }
 
-    #formularioReserva {
-        width: 100%;
+    .imagen-container img {
+        max-width: 80%;
     }
 
-    #overlay2 iframe {
-        width: 100%;
+    .redes-sociales img {
+        height: 50px;
     }
 }
+
 
 
 /* SECCION PRODUCTOS */

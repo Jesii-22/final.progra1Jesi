@@ -152,7 +152,7 @@ nav{
 }
  
 img.img-fluid{
-    padding-top: 25px;
+    margin-top: 20px;
     max-width: 110%;
     height: auto;
 }

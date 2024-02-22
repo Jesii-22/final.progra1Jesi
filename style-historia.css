@@ -350,8 +350,8 @@ div#sanTelmo.card,div#palermo.card{
 
 /* Centrar las tarjetas */
 .card-container {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     margin-top: 50px; /* Espacio entre los botones y las tarjetas */
 }
 .card-container h3{
@@ -368,10 +368,6 @@ div#sanTelmo.card,div#palermo.card{
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
-
-
-
-
 
 
 /* footer */
@@ -422,3 +418,34 @@ footer {
     transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
   }
   
+
+  /* Estilo para la imagen en dispositivos con pantalla de hasta 390x840px */
+@media only screen and (max-width: 390px) and (max-height: 840px) {
+    /* Estilo para la imagen dentro de la sección "Historia" */
+    .featurette img {
+        width: 80%; /* Reducir el ancho de la imagen al 80% del contenedor */
+        margin: 0 auto; /* Centrar la imagen horizontalmente */
+    }
+
+    /* Estilo para la imagen dentro de la sección de productos */
+    .card img {
+        width: 80%; /* Reducir el ancho de la imagen al 80% del contenedor */
+        margin: 0 auto; /* Centrar la imagen horizontalmente */
+    }
+    
+    .card-container{
+
+        display: inline-table;
+    }
+
+    h1{
+    font-size: 40px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+    p{
+        font-size: 12px;
+    }
+}

@@ -200,19 +200,7 @@ a.button-ver:hover {
 
 /* HOVER IMG */
 
-/* Estilo de la imagen en la sección "About" o "Historia" */
-.about-img img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px; /* Agrega bordes redondeados a la imagen */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agrega una transición suave para el efecto */
-}
 
-/* Efecto de sombra cuando se pasa el mouse sobre la imagen */
-.about-img img:hover {
-    transform: scale(1.05); /* Escala ligeramente la imagen cuando se activa el hover */
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Agrega una sombra suave */
-}
 
 
 /* RESPONSIVE */
@@ -448,6 +436,7 @@ div#sanTelmo.card,div#palermo.card{
 }
 
 /* Alinear los botones al centro */
+
 #card {
     padding: 90px;
     text-align: center;
@@ -498,6 +487,37 @@ div#sanTelmo.card,div#palermo.card{
 .fade-in {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
+}
+
+/* MAS EFECTOS */
+/* card */
+div.card{
+    color: white;
+    background-color: rgba(83, 70, 30, 0.838); /* Color blanco con 50% de opacidad */
+    text-align: center;
+}
+
+div.card h5{
+    color: #c49b63;
+    font-size: 25px;
+    font-family: "Josefin Sans", Arial, sans-serif;
+    text-align: center;
+}
+
+
+
+
+.card {
+    
+    width: 60%;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo con opacidad */
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Cambiar el tamaño de la tarjeta al pasar el mouse */
 }
 
 
@@ -636,146 +656,6 @@ div#sanTelmo.card,div#palermo.card{
 
 .overlay2{
     margin: -30px;
-}
-
-
-/* apartado historia */
-
-.featurette {
-    margin-bottom: 20px;
-}
-
-.featurette-image {
-    border-radius: 10px;
-}
-
-.text-container {
-    margin: 60px;
-    padding: 20px;
-    color: black; /* Color del texto */
-    padding: 45px;
-    align-items: center;
-    text-align: center;
-}
-
-.text-container h1,
-.text-container h3,
-.text-container p {
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-.text-container h1{
-    color: #c49b63;
-    font-size: 60px;
-    font-family: "Great Vibes", cursive;
-    line-height: 0;
-    margin: 0;
-}
-.text-container h3{
-    color: black;
-    font-size: 40px;
-    font-family: "Josefin Sans", Arial, sans-serif;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    line-height: 1.2;
-    
-
-}
-.text-container p{
-    font-size: 20px;
-}
-.texto{
-
-    margin: 50px;
-    background-color: rgb(179 156 101 / 50%); /* Opacidad del 50% */
-    border-radius: 10px;
-    padding: 20px;
-    color: #fff; /* Color del texto */
-    padding: 45px;
-}
-
-/* texto */
-
-@keyframes slideIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.animated-text {
-    animation: slideIn 8s ease forwards;
-}
-/* ecectos para historia */
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.animated-img {
-    animation: fadeIn 5s ease forwards;
-}
-
-.animated-text {
-    animation: fadeIn 5s ease forwards;
-}
-
-
-/* card */
-div.card{
-    color: white;
-    background-color: rgba(83, 70, 30, 0.838); /* Color blanco con 50% de opacidad */
-    text-align: center;
-}
-
-div.card h5{
-    color: #c49b63;
-    font-size: 25px;
-    font-family: "Josefin Sans", Arial, sans-serif;
-    text-align: center;
-}
-
-.container-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url(images/bg_4.jpg);
-    background-size: cover;
-}
-
-
-.card-container {
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.card {
-    
-    width: 40%;
-    margin: 10px;
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo con opacidad */
-    transition: transform 0.3s ease-in-out;
-}
-
-.card:hover {
-    transform: scale(1.05); /* Cambiar el tamaño de la tarjeta al pasar el mouse */
 }
 
 /* video animacion */

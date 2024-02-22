@@ -176,11 +176,26 @@ h4#estilo {
     font-size: 40px;
     color: #c49b63;
     font-family: "Great Vibes", cursive;
+    margin-bottom: 15px;
   
 }
 
 .container{
     padding-top: 25px;
+}
+
+a.button-ver{
+    margin: 200px;
+    border-radius: 6px;
+    background-color: rgb(180, 142, 92);
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+a.button-ver:hover {
+    background-color: rgba(124, 108, 69, 0.5); /* Cambiar el color de fondo al pasar el mouse */
+    color: #fff;
 }
 
 /* HOVER IMG */
@@ -412,7 +427,6 @@ div#sanTelmo.card,div#palermo.card{
     padding-top: 45px;
 }
 
-    
 
 #card img{
     padding: 35px;
@@ -636,11 +650,12 @@ div#sanTelmo.card,div#palermo.card{
 }
 
 .text-container {
-    margin: 20px;
+    margin: 60px;
     padding: 20px;
     color: black; /* Color del texto */
     padding: 45px;
-  
+    align-items: center;
+    text-align: center;
 }
 
 .text-container h1,
@@ -665,6 +680,7 @@ div#sanTelmo.card,div#palermo.card{
     margin-bottom: 0.5rem;
     font-weight: 500;
     line-height: 1.2;
+    
 
 }
 .text-container p{
@@ -672,13 +688,97 @@ div#sanTelmo.card,div#palermo.card{
 }
 .texto{
 
-    margin: 25px;
+    margin: 50px;
     background-color: rgb(179 156 101 / 50%); /* Opacidad del 50% */
     border-radius: 10px;
     padding: 20px;
     color: #fff; /* Color del texto */
     padding: 45px;
 }
+
+/* texto */
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-text {
+    animation: slideIn 8s ease forwards;
+}
+/* ecectos para historia */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-img {
+    animation: fadeIn 5s ease forwards;
+}
+
+.animated-text {
+    animation: fadeIn 5s ease forwards;
+}
+
+
+/* card */
+div.card{
+    color: white;
+    background-color: rgba(83, 70, 30, 0.838); /* Color blanco con 50% de opacidad */
+    text-align: center;
+}
+
+div.card h5{
+    color: #c49b63;
+    font-size: 25px;
+    font-family: "Josefin Sans", Arial, sans-serif;
+    text-align: center;
+}
+
+.container-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(images/bg_4.jpg);
+    background-size: cover;
+}
+
+
+.card-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    
+    width: 40%;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo con opacidad */
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Cambiar el tamaño de la tarjeta al pasar el mouse */
+}
+
+
 /* footer */
 footer img{
     height: 100px;
@@ -688,6 +788,7 @@ footer h3{
     color: #c49b63;
     font-family: "Great Vibes", cursive;
     font-size: 40px;
+    
 }
 
 

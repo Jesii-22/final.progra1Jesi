@@ -114,3 +114,48 @@ let refresh = document.getElementById('refresh');
 refresh.addEventListener('click', function() {
     location.reload();
 });
+
+
+// // funcion adaptacion tamaño video mobile
+
+// window.onload = function() {
+//     // Función para ajustar los estilos del video en función del ancho de la ventana
+//     function ajustarEstilos() {
+//         var videoFrame = document.querySelector('.video-frame');
+//         if (window.innerWidth <= 390) {
+//             // Si el ancho de la ventana es igual o menor a 390px, aplica los estilos
+//             videoFrame.style.width = '95%';
+//         } else {
+//             // Si el ancho de la ventana es mayor a 390px, restaura los estilos originales
+//             videoFrame.style.width = '100%';
+//         }
+//     }
+
+//     // Llama a la función para ajustar los estilos cuando la ventana se redimensiona
+//     window.onresize = ajustarEstilos;
+
+//     // Llama a la función por primera vez para ajustar los estilos al cargar la página
+//     ajustarEstilos();
+
+
+//     // foto producto --> mobile
+
+//     window.onload = function() {
+//         // Función para ajustar los estilos de la imagen del producto en función del ancho de la ventana
+//         function ajustarEstilos() {
+//             var productImage = document.querySelector('.product-image');
+//             if (window.innerWidth <= 390) {
+//                 // Si el ancho de la ventana es igual o menor a 768px, aplica los estilos
+//                 productImage.style.width = '80%';
+//             } else {
+//                 // Si el ancho de la ventana es mayor a 768px, restaura los estilos originales
+//                 productImage.style.width = '40%';
+//             }
+//         }
+    
+//         // Llama a la función para ajustar los estilos cuando la ventana se redimensiona
+//         window.onresize = ajustarEstilos;
+    
+//         // Llama a la función por primera vez para ajustar los estilos al cargar la página
+//         ajustarEstilos();
+//     };

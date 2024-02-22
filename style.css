@@ -352,15 +352,27 @@ a.button-ver:hover {
         max-width: 300px; /* Para asegurar que no sobrepase el ancho deseado */
         height: auto;
     }
+    
+}
 
     /* Ajustes para el video de la sección overlay */
-    #overlay video {
+    /* #overlay video {
         width: 100%;
         height: auto;
     }
-}
+} */
 
+/* .video-frame {
+    width: 100%; /* Establece el ancho máximo */
+    /* height: auto; 
+    margin: 24px;  */
+/* } */ 
 
+/* .product-image {
+    width: 50%; /* Ancho máximo */
+    /* height: auto; 
+    margin: 24px;  */
+/* } */ 
 /* SECCION PRODUCTOS */
 
 #productos h1{

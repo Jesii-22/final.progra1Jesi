@@ -258,10 +258,13 @@ div.card h5{
 }
 
 .animated-text {
-    animation: fadeIn 5s ease forwards;
+    animation: fadeIn 10s ease forwards;
 }
 
 
+.animated-text2 {
+    animation: slideIn 20s ease forwards;
+}
 
 /* card */
 
@@ -409,3 +412,13 @@ footer {
     height: 70px;
     margin-left: 40px; /* Espacio entre los logos */
 }
+
+/* hover */
+.redes-icono img {
+    transition: transform 0.3s ease;
+  }
+  
+  .redes-icono:hover img {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
+  }
+  

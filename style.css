@@ -200,6 +200,19 @@ a.button-ver:hover {
 
 /* HOVER IMG */
 
+/* Estilo de la imagen en la sección "About" o "Historia" */
+.about-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Agrega bordes redondeados a la imagen */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agrega una transición suave para el efecto */
+}
+
+/* Efecto de sombra cuando se pasa el mouse sobre la imagen */
+.about-img img:hover {
+    transform: scale(1.05); /* Escala ligeramente la imagen cuando se activa el hover */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Agrega una sombra suave */
+}
 
 
 
@@ -728,3 +741,13 @@ footer {
     margin-left: 40px; /* Espacio entre los logos */
 }
 
+/* hover */
+
+.redes-icono img {
+    transition: transform 0.3s ease;
+  }
+  
+  .redes-icono:hover img {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
+  }
+  

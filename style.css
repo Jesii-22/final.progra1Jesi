@@ -778,7 +778,37 @@ div.card h5{
     transform: scale(1.05); /* Cambiar el tamaño de la tarjeta al pasar el mouse */
 }
 
+/* video animacion */
+/* CSS */
 
+/* Define el estilo del contenedor del video */
+.video-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Define el estilo del overlay para la animación */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semi-transparente */
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.3s ease; /* Transición suave */
+  }
+  
+  /* Define el estilo del iframe */
+  .video-frame {
+    display: block;
+  }
+  
+  /* Cuando pases el mouse sobre el contenedor, muestra el overlay */
+  .video-container:hover .overlay {
+    opacity: 1;
+  }
+  
 /* footer */
 footer img{
     height: 100px;

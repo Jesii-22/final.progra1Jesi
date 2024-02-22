@@ -1,4 +1,4 @@
-// Función para mostrar u ocultar los locales con efecto fadeIn
+// Función para mostrar u ocultar los locales con efecto fadeIn  //FUNCION JS ANIMACION
 function mostrarSanTelmo() {
     ocultarYMostrarConFadeIn("sanTelmo", "palermo");
 }
